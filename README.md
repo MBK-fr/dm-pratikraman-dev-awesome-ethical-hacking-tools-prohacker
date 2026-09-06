@@ -50,6 +50,8 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[Docker Escape Cheat Sheet](cheatsheets/docker-security.md)** — Container breakout vectors, exposed socket mounts, privileged mode bypasses, and capability escapes.
 > *   **[Web Application Pentesting Cheat Sheet](cheatsheets/web-application-pentesting.md)** — XSS, SSRF, LFI/RFI, BOLA/IDOR, and JWT security vectors.
 > *   **[Metasploit & Meterpreter Cheat Sheet](cheatsheets/metasploit-framework.md)** — msfconsole usage, msfvenom payloads, post-exploitation, and pivoting.
+> *   **[Wireshark & Packet Analysis Cheat Sheet](cheatsheets/wireshark-packet-analysis.md)** — Capture & display filters, credential extraction, and stream forensics.
+> *   **[API Security & Auditing Cheat Sheet](cheatsheets/api-security-testing.md)** — REST, GraphQL introspection, BOLA/IDOR, mass assignment, and JWT testing.
 
 > 
 > 📖 **Quick Access Practical Guides:**
@@ -59,6 +61,8 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[Deep Learning & AI in Security Guide](guides/ai-cybersecurity-path.md)** — Neural network applications in defense, datasets, and auditing LLMs against prompt injection.
 > *   **[Bug Bounty Recon Workflow Guide](guides/bug-bounty-recon-workflow.md)** — Subdomain discovery, HTTP probing, endpoint crawling, and Nuclei vulnerability scanning.
 > *   **[Cloud & Container Security Guide](guides/cloud-security-auditing.md)** — AWS S3/IAM audits, multi-cloud Scout Suite scans, and container vulnerability checks.
+> *   **[SOC Incident Response Playbook Guide](guides/soc-incident-response-playbook.md)** — Windows Event IDs, Sysmon logging, Volatility memory forensics, and threat containment.
+> *   **[Malware Analysis & Reverse Engineering Guide](guides/malware-analysis-starter-guide.md)** — Static & dynamic analysis, Ghidra decompilation, and YARA rule writing.
 
 
 > [!WARNING]
@@ -88,6 +92,8 @@ graph TD
     Cheatsheets --> Docker["docker-security.md"]
     Cheatsheets --> WebApp["web-application-pentesting.md"]
     Cheatsheets --> MSF["metasploit-framework.md"]
+    Cheatsheets --> Wireshark["wireshark-packet-analysis.md"]
+    Cheatsheets --> APISec["api-security-testing.md"]
     
     Guides --> Intercept["android-intercept-burp.md"]
     Guides --> Homelab["kali-homelab-setup.md"]
@@ -95,6 +101,8 @@ graph TD
     Guides --> AISec["ai-cybersecurity-path.md"]
     Guides --> Recon["bug-bounty-recon-workflow.md"]
     Guides --> CloudSec["cloud-security-auditing.md"]
+    Guides --> SOCIR["soc-incident-response-playbook.md"]
+    Guides --> ReverseEng["malware-analysis-starter-guide.md"]
 ```
 
 ---

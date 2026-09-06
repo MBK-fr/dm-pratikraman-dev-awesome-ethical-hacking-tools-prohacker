@@ -46,6 +46,10 @@ Welcome to the ultimate curated collection of ethical hacking tutorials, referen
 > *   **[Local Hacking Lab Setup Guide](guides/kali-homelab-setup.md)** — Configure host-isolated NAT networks in VirtualBox, Kali Linux, and target VMs.
 > *   **[Kali Linux Mastery Guide](guides/kali-linux-mastery.md)** — Package manager configurations, metapackages, custom setups, and network troubleshooting.
 > *   **[Deep Learning & AI in Security Guide](guides/ai-cybersecurity-path.md)** — Neural network applications in defense, datasets, and auditing LLMs against prompt injection.
+> *   **[Bug Bounty Recon Workflow Guide](guides/bug-bounty-recon-workflow.md)** — Subdomain discovery, HTTP probing, endpoint crawling, and Nuclei vulnerability scanning.
+> *   **[Cloud & Container Security Guide](guides/cloud-security-auditing.md)** — AWS S3/IAM audits, multi-cloud Scout Suite scans, and container vulnerability checks.
+> *   **[SOC Incident Response Playbook Guide](guides/soc-incident-response-playbook.md)** — Windows Event IDs, Sysmon logging, Volatility memory forensics, and threat containment.
+> *   **[Malware Analysis & Reverse Engineering Guide](guides/malware-analysis-starter-guide.md)** — Static & dynamic analysis, Ghidra decompilation, and YARA rule writing.
 
 
 
