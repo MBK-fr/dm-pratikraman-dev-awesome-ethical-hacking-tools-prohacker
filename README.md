@@ -48,6 +48,8 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[SQL Injection Cheat Sheet](cheatsheets/sql-injection.md)** — Authentication bypasses, UNION extraction, blind SQLi, and database payloads.
 > *   **[Reverse Shells Cheat Sheet](cheatsheets/reverse-shells.md)** — Copy-pasteable connection one-liners for Bash, Python, PowerShell, PHP, and TLS/SSL.
 > *   **[Docker Escape Cheat Sheet](cheatsheets/docker-security.md)** — Container breakout vectors, exposed socket mounts, privileged mode bypasses, and capability escapes.
+> *   **[Web Application Pentesting Cheat Sheet](cheatsheets/web-application-pentesting.md)** — XSS, SSRF, LFI/RFI, BOLA/IDOR, and JWT security vectors.
+> *   **[Metasploit & Meterpreter Cheat Sheet](cheatsheets/metasploit-framework.md)** — msfconsole usage, msfvenom payloads, post-exploitation, and pivoting.
 
 > 
 > 📖 **Quick Access Practical Guides:**
@@ -55,8 +57,8 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[Local Hacking Lab Setup Guide](guides/kali-homelab-setup.md)** — Configure host-isolated NAT networks in VirtualBox, Kali Linux, and target VMs.
 > *   **[Kali Linux Mastery Guide](guides/kali-linux-mastery.md)** — Package manager configurations, metapackages, custom setups, and network troubleshooting.
 > *   **[Deep Learning & AI in Security Guide](guides/ai-cybersecurity-path.md)** — Neural network applications in defense, datasets, and auditing LLMs against prompt injection.
-
-
+> *   **[Bug Bounty Recon Workflow Guide](guides/bug-bounty-recon-workflow.md)** — Subdomain discovery, HTTP probing, endpoint crawling, and Nuclei vulnerability scanning.
+> *   **[Cloud & Container Security Guide](guides/cloud-security-auditing.md)** — AWS S3/IAM audits, multi-cloud Scout Suite scans, and container vulnerability checks.
 
 
 > [!WARNING]
@@ -84,11 +86,15 @@ graph TD
     Cheatsheets --> SQLi["sql-injection.md"]
     Cheatsheets --> Shells["reverse-shells.md"]
     Cheatsheets --> Docker["docker-security.md"]
+    Cheatsheets --> WebApp["web-application-pentesting.md"]
+    Cheatsheets --> MSF["metasploit-framework.md"]
     
     Guides --> Intercept["android-intercept-burp.md"]
     Guides --> Homelab["kali-homelab-setup.md"]
     Guides --> KaliMastery["kali-linux-mastery.md"]
     Guides --> AISec["ai-cybersecurity-path.md"]
+    Guides --> Recon["bug-bounty-recon-workflow.md"]
+    Guides --> CloudSec["cloud-security-auditing.md"]
 ```
 
 ---
