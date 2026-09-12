@@ -50,6 +50,7 @@ Welcome to the ultimate curated collection of ethical hacking tutorials, referen
 > *   **[Cloud & Container Security Guide](guides/cloud-security-auditing.md)** — AWS S3/IAM audits, multi-cloud Scout Suite scans, and container vulnerability checks.
 > *   **[SOC Incident Response Playbook Guide](guides/soc-incident-response-playbook.md)** — Windows Event IDs, Sysmon logging, Volatility memory forensics, and threat containment.
 > *   **[Malware Analysis & Reverse Engineering Guide](guides/malware-analysis-starter-guide.md)** — Static & dynamic analysis, Ghidra decompilation, and YARA rule writing.
+> *   **[Firmware Analysis & IoT Security Guide](guides/firmware-analysis-iot-security.md)** — Binwalk signature scanning, Squashfs filesystem extraction, and QEMU emulation.
 
 
 

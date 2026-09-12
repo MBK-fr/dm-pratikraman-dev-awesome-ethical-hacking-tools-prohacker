@@ -52,6 +52,7 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[Metasploit & Meterpreter Cheat Sheet](cheatsheets/metasploit-framework.md)** — msfconsole usage, msfvenom payloads, post-exploitation, and pivoting.
 > *   **[Wireshark & Packet Analysis Cheat Sheet](cheatsheets/wireshark-packet-analysis.md)** — Capture & display filters, credential extraction, and stream forensics.
 > *   **[API Security & Auditing Cheat Sheet](cheatsheets/api-security-testing.md)** — REST, GraphQL introspection, BOLA/IDOR, mass assignment, and JWT testing.
+> *   **[DevSecOps, Secrets & IaC Cheat Sheet](cheatsheets/devsecops-secrets-iac-security.md)** — Gitleaks detection, Checkov IaC scans, and git pre-commit hooks.
 
 > 
 > 📖 **Quick Access Practical Guides:**
@@ -63,6 +64,7 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[Cloud & Container Security Guide](guides/cloud-security-auditing.md)** — AWS S3/IAM audits, multi-cloud Scout Suite scans, and container vulnerability checks.
 > *   **[SOC Incident Response Playbook Guide](guides/soc-incident-response-playbook.md)** — Windows Event IDs, Sysmon logging, Volatility memory forensics, and threat containment.
 > *   **[Malware Analysis & Reverse Engineering Guide](guides/malware-analysis-starter-guide.md)** — Static & dynamic analysis, Ghidra decompilation, and YARA rule writing.
+> *   **[Firmware Analysis & IoT Security Guide](guides/firmware-analysis-iot-security.md)** — Binwalk signature scanning, Squashfs filesystem extraction, and QEMU emulation.
 
 
 > [!WARNING]
@@ -94,6 +96,7 @@ graph TD
     Cheatsheets --> MSF["metasploit-framework.md"]
     Cheatsheets --> Wireshark["wireshark-packet-analysis.md"]
     Cheatsheets --> APISec["api-security-testing.md"]
+    Cheatsheets --> DevSecOps["devsecops-secrets-iac-security.md"]
     
     Guides --> Intercept["android-intercept-burp.md"]
     Guides --> Homelab["kali-homelab-setup.md"]
@@ -103,6 +106,7 @@ graph TD
     Guides --> CloudSec["cloud-security-auditing.md"]
     Guides --> SOCIR["soc-incident-response-playbook.md"]
     Guides --> ReverseEng["malware-analysis-starter-guide.md"]
+    Guides --> IoTSec["firmware-analysis-iot-security.md"]
 ```
 
 ---
@@ -125,8 +129,11 @@ graph TD
 * [14. Reverse Engineering & Malware Analysis](#14-reverse-engineering--malware-analysis)
 * [15. Blue Teaming & Threat Hunting](#15-blue-teaming--threat-hunting)
 * [16. Premium Hacking OS / Distributions](#16-premium-hacking-os--distributions)
-* [17. Quick-Reference Tools Matrix](#17-quick-reference-tools-matrix)
-* [18. Contribution Guidelines](#18-contribution-guidelines)
+* [17. AI & LLM Security Tools](#17-ai--llm-security-tools)
+* [18. DevSecOps & CI/CD Security](#18-devsecops--cicd-security)
+* [19. Firmware & IoT Security](#19-firmware--iot-security)
+* [20. Quick-Reference Tools Matrix](#20-quick-reference-tools-matrix)
+* [21. Contribution Guidelines](#21-contribution-guidelines)
 
 ---
 
@@ -399,6 +406,8 @@ Tools used by defensive security teams (SOC) to detect intrusions, monitor netwo
 
 ---
 
+---
+
 ## 16. Premium Hacking OS / Distributions
 
 Operating systems that come pre-packaged with all the ethical hacking tools mentioned above.
@@ -409,7 +418,40 @@ Operating systems that come pre-packaged with all the ethical hacking tools ment
 
 ---
 
-## 17. Quick-Reference Tools Matrix
+## 17. AI & LLM Security Tools
+
+Tools designed for auditing large language models, prompt injection vulnerabilities, AI guardrails, and adversarial machine learning robustness.
+
+*   **[Garak](https://github.com/leondz/garak)** - Generative AI Red-teaming & Assessment Kit. Scans LLMs for prompt injection, jailbreaks, data exfiltration, and toxic outputs.
+*   **[PyRIT](https://github.com/Azure/PyRIT)** - Python Risk Identification Tool for AI created by Microsoft to automate security assessments of AI systems.
+*   **[Promptfoo](https://github.com/promptfoo/promptfoo)** - CLI and library for evaluating LLM outputs, prompt injection vulnerabilities, and red-teaming AI applications.
+*   **[Vigil](https://github.com/deadbits/vigil-llm)** - An open-source security scanner and guardrail engine for detecting prompt injection, jailbreaks, and sensitive data exposure in LLM inputs/outputs.
+
+---
+
+## 18. DevSecOps & CI/CD Security
+
+Tools used to embed security checks directly into automated build pipelines, container registries, and version control systems.
+
+*   **[Gitleaks](https://github.com/gitleaks/gitleaks)** - SAST tool for detecting hardcoded secrets like passwords, API keys, and tokens in git repos.
+*   **[Checkov](https://github.com/bridgecrewio/checkov)** - Static code analysis tool for Infrastructure as Code (IaC) files (Terraform, CloudFormation, Kubernetes YAML, Dockerfile).
+*   **[Dependency-Check](https://github.com/jeremylong/DependencyCheck)** - OWASP Software Composition Analysis (SCA) tool that detects publicly disclosed vulnerabilities in project dependencies.
+*   **[Syft & Grype](https://github.com/anchore/grype)** - Syft generates Software Bill of Materials (SBOM) and Grype scans container images and filesystems for vulnerabilities.
+
+---
+
+## 19. Firmware & IoT Security
+
+Tools for analyzing embedded hardware firmware images, extracting file systems, and emulating IoT CPU architectures.
+
+*   **[Binwalk](https://github.com/ReFirmLabs/binwalk)** - Firmware analysis tool designed for searching binary images for embedded files, file systems, and executable code.
+*   **[Firmadyne](https://github.com/firmadyne/firmadyne)** - Automated framework for emulating and auditing Linux-based embedded firmware.
+*   **[FACT (Firmware Analysis & Comparison Tool)](https://github.com/fkie-cad/FACT_core)** - Automated firmware extraction, security vulnerability analysis, and binary comparison platform.
+*   **[EMBA](https://github.com/e-m-b-a/emba)** - Security analyzer designed for embedded Linux firmware in IoT hardware and industrial control systems.
+
+---
+
+## 20. Quick-Reference Tools Matrix
 
 | Tool | Category | License | Platform Support | Primary Purpose |
 | :--- | :--- | :--- | :--- | :--- |
@@ -421,10 +463,12 @@ Operating systems that come pre-packaged with all the ethical hacking tools ment
 | **Frida** | Mobile Security | Open Source | Android, iOS, Win | Dynamic runtime binary hook and injection |
 | **Amass** | Bug Bounty | Open Source | Linux, Win, macOS | DNS enumeration and asset surface mapping |
 | **Wazuh** | Blue Teaming | Open Source | Linux, Win, macOS | Open source SIEM and endpoint security |
+| **Gitleaks** | DevSecOps | Open Source | Linux, Win, macOS | Git hardcoded secret scanner |
+| **Binwalk** | IoT / Firmware | Open Source | Linux, Win, macOS | Firmware signature scanning & extraction |
 
 ---
 
-## 18. Contribution Guidelines
+## 21. Contribution Guidelines
 
 Have a tool that deserves to be on this list?
 1. Check that the tool is active, open-source (or has a widely used free tier), and not deprecated.
